@@ -1,2 +1,1 @@
-VITE_SUPABASE_URL=https://ydfnnneqdewzebitmqrl.supabase.co
-VITE_SUPABASE_ANON_KEY=sb_publishable_iABH_XHSnSk19Zo4UCeOWg_u6gCOykE
+/// <reference types="vite/client" />
