@@ -2,7 +2,7 @@ import { supabase, User } from './supabase';
 
 export async function login(username: string, password: string): Promise<User | null> {
   const { data, error } = await supabase
-    .from('users')
+    .from('employees')
     .select('*')
     .eq('username', username)
     .eq('password', password)
@@ -17,7 +17,7 @@ export async function login(username: string, password: string): Promise<User | 
 
 export async function getCurrentUser(userId: string): Promise<User | null> {
   const { data, error } = await supabase
-    .from('users')
+    .from('employees')
     .select('*')
     .eq('id', userId)
     .maybeSingle();
